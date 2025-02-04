@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>CS4241 Assignment 2</title>
+    <meta charset="utf-8">
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- get rid of favicon error -->
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+</head>
+<body>
+
+<button id="toggleTable">📋 Toggle Data Table</button>
+
+<div id="info">
+    <h1>Shape competition!</h1>
+    <p>Click on the black canvas to place points of your polygon! Then Submit your shape below!</p>
+    <p>To view another shape, select it from the dropdown menu. To view all shapes, toggle to table and click on entries to preview.</p>
+
+    <form>
+        <label for="yourname">Your Name: </label>
+        <input type="text" id="yourname" placeholder="your name here"/>
+        <label for="shapename">Shape Name: </label>
+        <input type="text" id="shapename" placeholder="dylan"/>
+        <label for="description">Description (optional): </label>
+        <textarea id="description"></textarea>
+        <button id="submit">Submit</button>
+
+        <button id="revert">Revert</button>
+        <select id="shapeSelect">
+            <option value="">-- Select a shape --</option>
+        </select>
+        </form>
+
+</div>
+
+<div id="table-container" style="display: none;"></div>
+
+
+<div id="canvas">
+    <svg id="drawing-area" width="80%" height="90%"></svg>
+</div>
+
+</body>
+</html>
